@@ -2,11 +2,11 @@ export type Student = {
   id: string;
   studentId: string;
   givenName: string;
-  middleName?: string;
+  middleName: string | null;
   familyName: string;
-  suffix?: string;
+  suffix: string | null;
   gender: 'M' | 'F' | 'O';
   dateOfBirth: Date;
   nationality: string;
-  address?: string;
+  address: string | null;
 };
